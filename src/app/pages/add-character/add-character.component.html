@@ -1,0 +1,37 @@
+<div class="form">
+  <div class="form-addChar">
+    <form [formGroup]="characterForm" (ngSubmit)="onSubmit()">
+      <label>
+        <p>Name</p>
+        <input type="text" formControlName="name" />
+      </label>
+      <label>
+        <p>Image</p>
+        <input type="file" (change)="onFileChange($event)" />
+      </label>
+      <label>
+        <p>Universe</p>
+        <input type="text" formControlName="universe" />
+      </label>
+      <label>
+        <p>Transform</p>
+        <input type="text" formControlName="transform" />
+      </label>
+      <label>
+        <p>Genre</p>
+        <input type="text" formControlName="genre" />
+      </label>
+      <div class="form-select">
+        <p>Race</p>
+        <select formControlName="race">
+          <option>human</option>
+          <option>saiyan</option>
+          <option>android</option>
+          <option>namekian</option>
+          <option>unknown</option>
+        </select>
+      </div>
+      <button>Send</button>
+    </form>
+  </div>
+</div>

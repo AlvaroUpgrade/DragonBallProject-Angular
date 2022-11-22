@@ -1,0 +1,21 @@
+<div class="char-box">
+  <div class="char-box-details">
+    <!-- <p>Mid id es {{ myCharacter?._id }}</p> -->
+    <div class="char-details-content-image">
+      <img src="{{ myCharacter?.img }}" alt="{{ myCharacter?.name }}" />
+    </div>
+    <div class="char-box-details-info">
+      <p>-Name: {{ myCharacter?.name }}</p>
+      <p>-Race: {{ myCharacter?.race }}</p>
+      <p>-Genre: {{ myCharacter?.genre }}</p>
+      <p>-Universe: {{ myCharacter?.universe }}</p>
+      <p>-Transform: {{ myCharacter?.transform }}</p>
+      <div class="char-box-option-buttons">
+        <button (click)="deleteCharacter()">Delete</button>
+        <button routerLink="/updatecharacter/{{ myCharacter?._id }}">
+          Modify
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

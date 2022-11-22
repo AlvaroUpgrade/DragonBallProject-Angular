@@ -1,0 +1,8 @@
+<div class="all-cards">
+  <div *ngFor="let item of allCharacters" class="card">
+    <h1>{{ item.name }}</h1>
+    <h3>{{ item.race }}</h3>
+    <img src="{{ item.image }}" alt="{{ item.name }}" />
+    <button routerLink="/characters/{{ item.id }}">Watch More</button>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="form">
+  <div class="form-updateChar">
+    <form [formGroup]="characterForm" (ngSubmit)="onSubmit()">
+      <label>
+        <p>Name</p>
+        <input type="text" formControlName="name" />
+      </label>
+      <label>
+        <p>Image</p>
+        <input
+          type="file"
+          formControlName="img"
+          (change)="onFileChange($event)"
+        />
+      </label>
+
+      <div class="form-select">
+        <p>Race</p>
+        <select formControlName="race">
+          <option>human</option>
+          <option>saiyan</option>
+          <option>android</option>
+          <option>namekian</option>
+          <option>unknown</option>
+        </select>
+      </div>
+      <button>Update</button>
+    </form>
+  </div>
+</div>

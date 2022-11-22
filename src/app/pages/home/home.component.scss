@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+.home {
+  background-image: url("https://media2.giphy.com/media/WOb8EeFziTQNE02WXs/giphy.gif");
+  background-position: center 25%;
+  background-size: cover;
+  height: 88vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid red;
+
+  .home-box {
+    height: 100%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.695);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    .home-box-info {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      h1 {
+        font-size: 45px;
+        text-shadow: 0 0 1px white, 0 0 5px white;
+      }
+
+      button {
+        background-color: transparent;
+        color: white;
+        height: 100px;
+        width: 200px;
+        border: 2px solid #222;
+        box-shadow: inset 0 0 5px springgreen, 0 0 10px springgreen;
+        border-radius: 15px;
+        font-size: 20px;
+        font-family: "Anton", sans-serif;
+        transition: 1s;
+      }
+
+      button:hover {
+        border: 2px solid white;
+        background-color: springgreen;
+        box-shadow: inset 0 0 40px springgreen, 0 0 50px springgreen;
+        color: black;
+      }
+    }
+  }
+}

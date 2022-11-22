@@ -1,0 +1,46 @@
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+  width: 100%;
+  // border: solid 2px blue;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    width: 300px;
+    border: 5px solid #222;
+    border-radius: 15px;
+    margin: 20px;
+    transition: .5s;
+    img {
+      height: 100px;
+    }
+
+    button {
+      background-color: transparent;
+      color: white;
+      height: 60px;
+      width: 100px;
+      border: 2px solid white;
+      box-shadow: inset 0 0 5px springgreen, 0 0 10px springgreen;
+      border-radius: 20px;
+      transition: 1;
+    }
+    
+    button:hover{
+      background-color: springgreen;
+      color: black;
+    }
+  }
+
+  .card:hover {
+    border: 5px solid lightgrey;
+    box-shadow: inset 0 0 10px springgreen, 0 0 10px springgreen,
+      0 0 15px springgreen, 0 0 30px springgreen;
+  }
+}
